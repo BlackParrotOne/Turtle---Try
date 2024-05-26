@@ -4,19 +4,19 @@ alice = turtle.Turtle()
 bob = turtle.Turtle()
 print(bob)
 
-# def square(t):
-#     for i in range(4):
-#         t.fd(100)
-#         t.lt(90)
-# square(bob)
-# square(alice)
+def square(t):
+    for i in range(4):
+        t.fd(100)
+        t.lt(90)
+square(bob)
+square(alice)
 
 
-# def square(t, length):
-#     for i in range(4):
-#         t.fd(length)
-#         t.lt(90)
-# square(bob, 100)
+def square(t, length):
+    for i in range(4):
+        t.fd(length)
+        t.lt(90)
+square(bob, 100)
 
 def polygon(t, n, length):
     angle = 360 / n
@@ -27,21 +27,19 @@ polygon(bob, 20, 30)
 
 import math
 
-# def circle(t, r):
-#     circumference = 2* math.pi * r
-#     n = 50
-#     length = circumference / n
-#     polygon(t, n, length)
+def circle(t, r):
+    circumference = 2* math.pi * r
+    n = 50
+    length = circumference / n
+    polygon(t, n, length)
 
 
 
-# def circle(t, r):
-#     circumference = 2 * math.pi * r
-#     n = int(circumference / 3) + 1
-#     length = circumference / n
-#     polygon(t, n, length)
-
-
+def circle(t, r):
+    circumference = 2 * math.pi * r
+    n = int(circumference / 3) + 1
+    length = circumference / n
+    polygon(t, n, length)
 
 
 def arc(t, r, angle):
